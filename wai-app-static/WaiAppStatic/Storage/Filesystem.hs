@@ -173,7 +173,7 @@ hashFileIfExists fp = do
         Right x -> Just x
 
 isVisible :: FilePath -> Bool
-isVisible ('.' : _) = False
+--isVisible ('.':_) = False
 isVisible "" = False
 isVisible _ = True
 

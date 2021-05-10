@@ -47,7 +47,7 @@ newtype Piece = Piece {fromPiece :: Text}
 toPiece :: Text -> Maybe Piece
 toPiece t
     | T.null t = Just $ Piece t
-    | T.head t == '.' = Nothing
+{-    | T.head t == '.' = Nothing -}
     | T.any (== '/') t = Nothing
     | otherwise = Just $ Piece t
 
